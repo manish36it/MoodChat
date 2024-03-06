@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+html, body {
+  font-family: sans-serif;
+  font-size: 16px;
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.content {
+  display: flex;
+  flex-flow: row nowrap;
+  flex: 1 1 auto;
+}
+
+.input {
+  display: flex;
+  flex-flow: row nowrap;
+  border-top: 1px solid #ddd; /* Use a softer color for border */
+  flex: 0 1 auto;
+  padding: 1em;
+}
+
+aside {
+  min-width: 10em;
+  flex: 0 1 auto;
+  padding: 1rem;
+  border-right: 1px solid #ddd; /* Use a softer color for border */
+}
+
+aside > h3 {
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-size: 1.25em;
+}
+
+#chat {
+  flex: 1 1 auto;
+  padding: 1rem;
+  overflow-y: auto; /* Add this line to make the chat area scrollable */
+  max-height: calc(100vh - 4em); /* Set maximum height for chat area */
+  background-color: #f5f5f5; /* Use a light gray background for chat area */
+}
+
+#chat-status-msg {
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+#users {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 2em;
+}
+
+#users > li {
+  padding: 0.25em;
+  cursor: pointer;
+}
+
+#users > li:hover {
+  background-color: #e0e0e0; /* Use a slightly darker shade for hover effect */
+}
+
+#text-input {
+  flex: 1 1 auto;
+  margin-right: 1em;
+  font-size: 1.5em;
+  padding: 0.3em;
+}
+
+#send-btn {
+  flex: 0 0 auto;
+  font-size: 1.5em;
+  padding: 0.3em;
+  cursor: pointer;
+}
+
+#login-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.9); /* Use a semi-transparent white background */
+  font-size: 2em;
+  transition: top 0.2s, opacity 0.2s;
+}
+
+#login-box.hidden {
+  top: -100vh;
+  opacity: 0;
+}
+
+#login-box > div {
+  padding: 1em;
+  background: #f5f5f5; /* Use a light gray background for login box */
+  border-radius: 6px;
+}
+
+#login-box h2 {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+#login-box input {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+/* Separate user messages */
+.message-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1em;
+}
+
+.user-message {
+  background-color: #68b6f7; /* Blue color for user messages */
+  color: #fff; /* White text color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 0.5em 1em;
+  margin-right: 1em;
+  border: 1px solid #68b6f7; /* Add border to create a rounded box */
+}
+
+.bot-message {
+  background-color: #f5f5f5; /* Light gray color for bot messages */
+  color: #000; /* Black text color */
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  margin-left: 1em;
+}
+* {
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+html, body {
+  font-family: sans-serif;
+  font-size: 16px;
+  height: 100%;
+}
+
+main {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.content {
+  display: flex;
+  flex-flow: row nowrap;
+  flex: 1 1 auto;
+}
+
+.input {
+  display: flex;
+  flex-flow: row nowrap;
+  border-top: 1px solid #ddd; /* Use a softer color for border */
+  flex: 0 1 auto;
+  padding: 1em;
+}
+
+aside {
+  min-width: 10em;
+  flex: 0 1 auto;
+  padding: 1rem;
+  border-right: 1px solid #ddd; /* Use a softer color for border */
+}
+
+aside > h3 {
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-size: 1.25em;
+}
+
+#chat {
+  flex: 1 1 auto;
+  padding: 1rem;
+  overflow-y: auto; /* Add this line to make the chat area scrollable */
+  max-height: calc(100vh - 4em); /* Set maximum height for chat area */
+  background-color: #f5f5f5; /* Use a light gray background for chat area */
+}
+
+#chat-status-msg {
+  font-family: sans-serif;
+  font-style: italic;
+}
+
+#users {
+  list-style-type: none;
+  padding: 0;
+  margin-bottom: 2em;
+}
+
+#users > li {
+  padding: 0.25em;
+  cursor: pointer;
+}
+
+#users > li:hover {
+  background-color: #e0e0e0; /* Use a slightly darker shade for hover effect */
+}
+
+#text-input {
+  flex: 1 1 auto;
+  margin-right: 1em;
+  font-size: 1.5em;
+  padding: 0.3em;
+}
+
+#send-btn {
+  flex: 0 0 auto;
+  font-size: 1.5em;
+  padding: 0.3em;
+  cursor: pointer;
+}
+
+#login-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(255, 255, 255, 0.9); /* Use a semi-transparent white background */
+  font-size: 2em;
+  transition: top 0.2s, opacity 0.2s;
+}
+
+#login-box.hidden {
+  top: -100vh;
+  opacity: 0;
+}
+
+#login-box > div {
+  padding: 1em;
+  background: #f5f5f5; /* Use a light gray background for login box */
+  border-radius: 6px;
+}
+
+#login-box h2 {
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+#login-box input {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 2.5rem;
+  padding: 1rem;
+}
+
+/* Separate user messages */
+.message-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1em; /* Adjust spacing between messages */
+}
+
+.user-message {
+  background-color: #68b6f7; /* Blue color for user messages */
+  color: #fff; /* White text color */
+  border-radius: 10px; /* Rounded corners */
+  padding: 0.5em 1em;
+  margin-right: 1em;
+  border: 1px solid #68b6f7; /* Add border to create a rounded box */
+  margin-bottom: 0.5em; /* Adjust spacing between user messages */
+}
+
+.bot-message {
+  background-color: #f5f5f5; /* Light gray color for bot messages */
+  color: #000; /* Black text color */
+  border-radius: 10px;
+  padding: 0.5em 1em;
+  margin-left: 1em;
+  margin-bottom: 1em; /* Adjust spacing between bot messages */
+}
